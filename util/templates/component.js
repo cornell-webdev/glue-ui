@@ -6,7 +6,7 @@ interface ${componentName}Props {
   
 }
 
-const ${componentName} = ({  }: ${componentName}Props) => {
+export const ${componentName} = ({  }: ${componentName}Props) => {
   return (
     <Container>
       ${componentName}

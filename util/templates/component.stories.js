@@ -1,15 +1,20 @@
 module.exports = (componentName) => ({
-  content: `// Generated with util/create-component.js
-import React from "react";
-import ${componentName} from "./${componentName}";
+  content: `import React from 'react'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { ${componentName} } from './${componentName}'
 
 export default {
-    title: "${componentName}"
-};
+  title: '${componentName}',
+  component: ${componentName},
+} as ComponentMeta<typeof ${componentName}>
 
-export const WithBar = () => <${componentName} foo="bar" />;
+const Template: ComponentStory<typeof ${componentName}> = (args) => (
+  <${componentName} {...args}>Button</${componentName}>
+)
 
-export const WithBaz = () => <${componentName} foo="baz" />;
+export const Default = Template.bind({})
+Default.args = {
+}
 `,
   extension: `.stories.tsx`
 });

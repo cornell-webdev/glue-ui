@@ -20,8 +20,9 @@ const Container = styled.button<IContainerProps>`
   font-size: 1rem;
   font-weight: medium;
   padding: 0.5rem 0.8rem;
-  background: ${(props) => props.theme.brand};
-  color: '#fff';
+  background-color: ${(props) => props.theme.brand[500]};
+  color: #fff;
+  border: none;
 
   /* background */
   background: ${(props) => props.background && props.background};
