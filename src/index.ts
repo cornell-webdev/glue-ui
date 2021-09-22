@@ -1,3 +1,3 @@
-import TestComponent from "./TestComponent";
+import ContainedButton from "./components/ContainedButton/ContainedButton";
 
-export { TestComponent };
+export { ContainedButton };

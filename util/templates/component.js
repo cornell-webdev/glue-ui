@@ -1,17 +1,24 @@
 module.exports = (componentName) => ({
-  content: `// Generated with util/create-component.js
-import React from "react";
+  content: `import React from 'react'
+import styled from 'styled-components'
 
-import { ${componentName}Props } from "./${componentName}.types";
+interface ${componentName}Props {
+  
+}
 
-import "./${componentName}.scss";
+const ${componentName} = ({  }: ${componentName}Props) => {
+  return (
+    <Container>
+      ${componentName}
+    </Container>
+  )
+}
 
-const ${componentName}: React.FC<${componentName}Props> = ({ foo }) => (
-    <div data-testid="${componentName}" className="foo-bar">{foo}</div>
-);
+const Container = styled.div\`
+  
+\`
 
-export default ${componentName};
-
+export default ${componentName}
 `,
   extension: `.tsx`
 });
