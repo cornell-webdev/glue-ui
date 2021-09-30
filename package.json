@@ -1,6 +1,6 @@
 {
-  "name": "react-component-library",
-  "version": "1.0.0",
+  "name": "test-publish-jay",
+  "version": "0.1.0",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -9,7 +9,7 @@
   "types": "build/index.d.ts",
   "description": "A skeleton to create your own React component library using Rollup, TypeScript, Sass and Storybook",
   "scripts": {
-    "build": "rollup -c",
+    "build": "npx rollup -c",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
@@ -31,7 +31,7 @@
     "Sass",
     "Storybook"
   ],
-  "author": "Harvey Delaney",
+  "author": "Cornell WebDev",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/HarveyD/react-component-library/issues"

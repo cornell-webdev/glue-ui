@@ -1,3 +1,4 @@
-import ContainedButton from "./components/ContainedButton/ContainedButton";
+import ContainedButton from './components/ContainedButton/ContainedButton'
+import GlueProvider from './components/GlueProvider/GlueProvider'
 
-export { ContainedButton };
+export { ContainedButton, GlueProvider }
