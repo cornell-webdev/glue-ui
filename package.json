@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
+    "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
     "@material-ui/utils": "^4.11.2",
     "@mui/icons-material": "^5.0.1",
@@ -66,6 +67,7 @@
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
     "chromatic": "^5.10.2",
+    "express": "^4.17.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "node-sass": "^5.0.0",
@@ -84,7 +86,6 @@
   },
   "dependencies": {
     "storybook-addon-react-docgen": "^1.2.42",
-    "styled-normalize": "^8.0.7",
-    "@emotion/react": "^11.4.1"
+    "styled-normalize": "^8.0.7"
   }
 }
