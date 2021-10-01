@@ -1,13 +1,13 @@
 {
-  "name": "test-publish-jay",
-  "version": "0.1.0",
+  "name": "cornell-glue-ui",
+  "version": "0.1.1",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
     "build"
   ],
   "types": "build/index.d.ts",
-  "description": "A skeleton to create your own React component library using Rollup, TypeScript, Sass and Storybook",
+  "description": "Glue UI is Cornell WebDev's centralized UI component library. It implements our design system and serves as a single source of truth for React components used within our projects.",
   "scripts": {
     "build": "npx rollup -c",
     "test": "jest",
@@ -20,26 +20,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HarveyD/react-component-library.git"
+    "url": "git+https://github.com/cornell-webdev/glue-ui.git"
   },
   "keywords": [
     "React",
+    "Cornell",
+    "WebDev",
+    "Glue UI",
+    "Glue",
     "Component",
     "Library",
     "Rollup",
     "Typescript",
-    "Sass",
     "Storybook"
   ],
   "author": "Cornell WebDev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HarveyD/react-component-library/issues"
+    "url": "https://github.com/cornell-webdev/glue-ui/issues"
   },
-  "homepage": "https://github.com/HarveyD/react-component-library#readme",
+  "homepage": "https://github.com/cornell-webdev/glue-ui",
   "peerDependencies": {
     "react": ">=16.8.0",
-    "react-dom": ">=16.8.0"
+    "react-dom": ">=16.8.0",
+    "styled-components": ">= 5"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",

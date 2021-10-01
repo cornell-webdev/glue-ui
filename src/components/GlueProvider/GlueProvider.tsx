@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { GlueProvider as StyledGlueProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import { theme as defaultTheme } from '../../theme'
 import { Normalize } from 'styled-normalize'
 
@@ -11,8 +11,8 @@ interface GlueProviderProps {
 export const GlueProvider = ({ theme, children }: GlueProviderProps) => {
   return (
     <Container>
-      <Normalize />
-      <StyledGlueProvider theme={theme || defaultTheme}>{children}</StyledGlueProvider>
+      {/* <Normalize /> */}
+      <ThemeProvider theme={theme || defaultTheme}>{children}</ThemeProvider>
     </Container>
   )
 }

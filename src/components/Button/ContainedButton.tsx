@@ -23,6 +23,7 @@ const Container = styled.button<IContainerProps>`
   background-color: ${(props) => props.theme.brand[500]};
   color: #fff;
   border: none;
+  cursor: pointer;
 
   /* background */
   background: ${(props) => props.background && props.background};

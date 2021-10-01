@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider } from './../src/components/ThemeProvider/ThemeProvider';
+import { GlueProvider } from './../src/components/GlueProvider/GlueProvider';
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -13,8 +13,8 @@ export const parameters = {
 
 export const decorators = [
   (Story) => (
-    <ThemeProvider>
+    <GlueProvider>
       <Story />
-    </ThemeProvider>
+    </GlueProvider>
   ),
 ];
