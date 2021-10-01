@@ -57,12 +57,12 @@ The `"prepublishOnly": "npm run build"` script in `package.json` will execute be
 ## Usage
 
 ```
-npm install glue-ui
+npm install cornell-glue-ui
 ```
 
 ```TSX
 import React from "react";
-import { ExampleComponent } from "glue-ui";
+import { ExampleComponent } from "cornell-glue-ui";
 
 const App = () => (
   <div>
