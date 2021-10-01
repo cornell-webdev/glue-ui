@@ -1,8 +1,5 @@
 # Glue UI
 
-[![Build status](https://badge.buildkite.com/90ff98db996bb137c5be1bdce666c4b1ce68a25b17af0a6a04.svg?branch=master)](https://buildkite.com/harvey/react-component-library)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
 Glue UI is Cornell WebDev's centralized UI component library. It implements Cornell WebDev's Glue Design System and serves as a single source of truth for React components in our web applications.
 
 Glue UI was built using:
