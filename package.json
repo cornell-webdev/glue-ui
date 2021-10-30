@@ -10,6 +10,7 @@
   "description": "Glue UI is Cornell WebDev's centralized UI component library. It implements our design system and serves as a single source of truth for React components used within our projects.",
   "scripts": {
     "build": "npx rollup -c",
+    "publish:auto": "npm version patch && npm run publish && storybook:export",
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
