@@ -13,10 +13,11 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
-    "storybook:export": "build-storybook",
+    "storybook:build": "build-storybook",
     "generate": "node ./util/create-component",
     "prepublishOnly": "npm run build",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "storybook:export": "npx chromatic --project-token=296231e129be"
   },
   "repository": {
     "type": "git",
