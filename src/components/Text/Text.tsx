@@ -48,17 +48,17 @@ const CoreText = styled.p<TextProps>`
 
 export const H1 = styled(CoreText)`
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 700;
 `
 
 export const H2 = styled(CoreText)`
   font-size: 2.5rem;
-  font-weight: 400;
+  font-weight: 700;
 `
 
 export const H3 = styled(CoreText)`
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 500;
 `
 
 export const H4 = styled(CoreText)`
