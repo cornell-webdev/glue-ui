@@ -9,6 +9,7 @@ interface TextProps
   variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'meta'
   children?: React.ReactNode
   maxLines?: number
+  fontWeight?: number | string
 }
 
 export const Text = ({ variant = 'p', children, ...rest }: TextProps) => {
@@ -44,6 +45,9 @@ const CoreText = styled.p<TextProps>`
   display: ${(props) => props.maxLines && '-webkit-box'};
   -webkit-line-clamp: ${(props) => props.maxLines && props.maxLines};
   -webkit-box-orient: ${(props) => props.maxLines && 'vertical'};
+
+  /* fontWeight */
+  font-weight: ${(props) => props.fontWeight && props.fontWeight};
 `
 
 export const H1 = styled(CoreText)`
