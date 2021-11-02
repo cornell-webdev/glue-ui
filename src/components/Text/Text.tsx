@@ -6,7 +6,7 @@ interface TextProps
     React.HTMLAttributes<HTMLParagraphElement>,
     HTMLParagraphElement
   > {
-  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'meta'
+  variant?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'meta1' | 'meta2'
   children?: React.ReactNode
   maxLines?: number
   fontWeight?: number | string
@@ -28,8 +28,10 @@ export const Text = ({ variant = 'p', children, ...rest }: TextProps) => {
       return <H6 {...rest}>{children}</H6>
     case 'p':
       return <P {...rest}>{children}</P>
-    case 'meta':
-      return <Meta {...rest}>{children}</Meta>
+    case 'meta1':
+      return <Meta1 {...rest}>{children}</Meta1>
+    case 'meta2':
+      return <Meta2 {...rest}>{children}</Meta2>
   }
 }
 
@@ -81,8 +83,12 @@ export const P = styled(CoreText)`
   font-size: 1rem;
 `
 
-export const Meta = styled(CoreText)`
+export const Meta1 = styled(CoreText)`
   font-size: 0.88rem;
+`
+
+export const Meta2 = styled(CoreText)`
+  font-size: 0.75rem;
 `
 
 export default Text

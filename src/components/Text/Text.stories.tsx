@@ -46,7 +46,12 @@ P.args = {
   variant: 'p',
 }
 
-export const Meta = Template.bind({})
-Meta.args = {
-  variant: 'meta',
+export const Meta1 = Template.bind({})
+Meta1.args = {
+  variant: 'meta1',
+}
+
+export const Meta2 = Template.bind({})
+Meta2.args = {
+  variant: 'meta2',
 }
