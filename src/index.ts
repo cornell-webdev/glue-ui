@@ -3,6 +3,7 @@ import GlueProvider from './components/GlueProvider/GlueProvider'
 import IconButton from './components/IconButton/IconButton'
 import Text from './components/Text/Text'
 import FadeOnView from './components/FadeOnView/FadeOnView'
+import Spacer from './components/Spacer/Spacer'
 import Tag from './components/Tag/Tag'
 
-export { Button, GlueProvider, IconButton, Tag, Text, FadeOnView }
+export { Button, GlueProvider, IconButton, Text, Tag, FadeOnView, Spacer }
