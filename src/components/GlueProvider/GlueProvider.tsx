@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { theme as defaultTheme } from '../../theme'
-import { Normalize } from 'styled-normalize'
+import './normalize.css'
 
 interface GlueProviderProps {
   theme?: any
@@ -11,18 +11,11 @@ interface GlueProviderProps {
 export const GlueProvider = ({ theme, children }: GlueProviderProps) => {
   return (
     <Container>
-      {/* <Normalize /> */}
       <ThemeProvider theme={theme || defaultTheme}>{children}</ThemeProvider>
     </Container>
   )
 }
 
-const Container = styled.div`
-  font-family: sans-serif !important;
-
-  & * {
-    box-sizing: border-box !important;
-  }
-`
+const Container = styled.div``
 
 export default GlueProvider
