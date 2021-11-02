@@ -1,6 +1,6 @@
 {
   "name": "cornell-glue-ui",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -13,10 +13,12 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "storybook": "start-storybook -p 6006",
-    "storybook:export": "build-storybook",
+    "storybook:build": "build-storybook",
     "generate": "node ./util/create-component",
     "prepublishOnly": "npm run build",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "storybook:export": "npx chromatic --project-token=296231e129be --auto-accept-changes",
+    "chromatic": "npx chromatic --project-token=296231e129be --auto-accept-changes"
   },
   "repository": {
     "type": "git",
@@ -66,7 +68,7 @@
     "@types/react-dom": "^16.9.14",
     "babel-loader": "^8.2.2",
     "babel-preset-react-app": "^10.0.0",
-    "chromatic": "^5.10.2",
+    "chromatic": "^6.0.5",
     "express": "^4.17.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
