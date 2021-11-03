@@ -1,6 +1,6 @@
 {
   "name": "cornell-glue-ui",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -45,7 +45,8 @@
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0",
-    "styled-components": ">= 5"
+    "styled-components": ">= 5",
+    "react-router-dom": ">= 5"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
@@ -90,7 +91,6 @@
   },
   "dependencies": {
     "react-device-detect": "^2.1.2",
-    "storybook-addon-react-docgen": "^1.2.42",
-    "styled-normalize": "^8.0.7"
+    "storybook-addon-react-docgen": "^1.2.42"
   }
 }
