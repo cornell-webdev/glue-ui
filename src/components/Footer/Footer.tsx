@@ -27,7 +27,7 @@ export const Footer = ({ logo, navs }: IFooterProps) => {
         <Spacer y={4} />
         <NavSection>
           {navs?.map(({ heading, routes }) => (
-            <NavContainer>
+            <NavContainer key={heading}>
               {heading && (
                 <Heading variant='h6' fontWeight={500}>
                   {heading}
@@ -35,7 +35,7 @@ export const Footer = ({ logo, navs }: IFooterProps) => {
               )}
               <Spacer y={2} />
               {routes?.map(({ label, url }) => (
-                <LinkContainer>
+                <LinkContainer key={`${label}${url}`}>
                   <Link to={url}>
                     <LinkText>{label}</LinkText>
                   </Link>
