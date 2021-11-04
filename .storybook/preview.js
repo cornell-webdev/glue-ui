@@ -1,4 +1,6 @@
+import { createBrowserHistory } from 'history';
 import React from 'react';
+import { Router } from 'react-router-dom';
 import { GlueProvider } from './../src/components/GlueProvider/GlueProvider';
 
 export const parameters = {
@@ -11,10 +13,14 @@ export const parameters = {
   },
 }
 
+const history = createBrowserHistory()
+
 export const decorators = [
   (Story) => (
-    <GlueProvider>
-      <Story />
-    </GlueProvider>
+    <Router history={history}>
+      <GlueProvider>
+        <Story />
+      </GlueProvider>
+    </Router>
   ),
 ];
