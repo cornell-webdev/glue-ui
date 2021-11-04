@@ -37,12 +37,12 @@ export const Showcase = ({
           </Text>
           <Spacer y={3} />
           {paragraphs?.map((paragraph) => (
-            <>
+            <div key={paragraph}>
               <LeftContainer>
                 <Text fontWeight={500}>{paragraph}</Text>
               </LeftContainer>
               <Spacer y={1.5} />
-            </>
+            </div>
           ))}
           <Spacer y={2.5} />
           {link && (
