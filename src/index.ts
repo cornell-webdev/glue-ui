@@ -6,5 +6,22 @@ import FadeOnView from './components/FadeOnView/FadeOnView'
 import Spacer from './components/Spacer/Spacer'
 import Tag from './components/Tag/Tag'
 import Footer from './components/Footer/Footer'
+import Showcase from './components/Showcase/Showcase'
+import useIsDesktop from './components/useIsDesktop/useIsDesktop'
+import useWindowSize from './components/useWindowSize/useWindowSize'
+import FlexContainer from './components/FlexContainer/FlexContainer'
 
-export { Button, GlueProvider, IconButton, Text, Tag, FadeOnView, Spacer, Footer }
+export {
+  Button,
+  GlueProvider,
+  IconButton,
+  Text,
+  Tag,
+  FadeOnView,
+  Spacer,
+  Footer,
+  Showcase,
+  useIsDesktop,
+  useWindowSize,
+  FlexContainer,
+}

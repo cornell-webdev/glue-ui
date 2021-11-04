@@ -10,6 +10,7 @@ interface TextProps
   children?: React.ReactNode
   maxLines?: number
   fontWeight?: number | string
+  color?: string
 }
 
 export const Text = ({ variant = 'p', children, ...rest }: TextProps) => {
@@ -50,6 +51,9 @@ const CoreText = styled.p<TextProps>`
 
   /* fontWeight */
   font-weight: ${(props) => props.fontWeight && props.fontWeight};
+
+  /* color */
+  color: ${(props) => props.color && props.color};
 `
 
 export const H1 = styled(CoreText)`
