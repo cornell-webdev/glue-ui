@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { theme as defaultTheme } from '../../theme'
+import './fonts.css'
 import './normalize.css'
 import ScrollToTop from './ScrollToTop'
 

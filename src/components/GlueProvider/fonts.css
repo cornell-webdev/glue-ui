@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "SF Pro Display Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Regular"),
+    url("./sf-pro/SFPRODISPLAYREGULAR.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Ultralight Italic";
+  font-style: italic;
+  font-weight: normal;
+  src: local("SF Pro Display Ultralight Italic"),
+    url("./sf-pro/SFPRODISPLAYULTRALIGHTITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Thin Italic";
+  font-style: italic;
+  font-weight: normal;
+  src: local("SF Pro Display Thin Italic"),
+    url("./sf-pro/SFPRODISPLAYTHINITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Light Italic";
+  font-style: italic;
+  font-weight: lighter;
+  src: local("SF Pro Display Light Italic"),
+    url("./sf-pro/SFPRODISPLAYLIGHTITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Medium";
+  font-style: normal;
+  font-weight: medium;
+  src: local("SF Pro Display Medium"),
+    url("./sf-pro/SFPRODISPLAYMEDIUM.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Semibold Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SF Pro Display Semibold Italic"),
+    url("./sf-pro/SFPRODISPLAYSEMIBOLDITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Bold";
+  font-style: normal;
+  font-weight: bold;
+  src: local("SF Pro Display Bold"), url("./sf-pro/SFPRODISPLAYBOLD.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Heavy Italic";
+  font-style: italic;
+  font-weight: bold;
+  src: local("SF Pro Display Heavy Italic"),
+    url("./sf-pro/SFPRODISPLAYHEAVYITALIC.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SF Pro Display Black Italic";
+  font-style: italic;
+  font-weight: normal;
+  src: local("SF Pro Display Black Italic"),
+    url("./sf-pro/SFPRODISPLAYBLACKITALIC.woff") format("woff");
+}
