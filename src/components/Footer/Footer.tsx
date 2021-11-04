@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import { FlexContainer } from './../FlexContainer/FlexContainer'
 import { Spacer } from './../Spacer/Spacer'
 import { Text } from './../Text/Text'
 
@@ -48,11 +49,11 @@ export const Footer = ({ logo, navs }: IFooterProps) => {
       <Spacer y={2} />
       <BottomRow>
         <LightText variant='meta1'>© 2021 webdev</LightText>
-        <div>
+        <FlexContainer flexDirection='column' alignEnd>
           <LightText variant='meta1'>Built with 🖤 by webdev</LightText>
           <Spacer y={1} />
           <LightText variant='meta1'>cornellwebdev@gmail.com</LightText>
-        </div>
+        </FlexContainer>
       </BottomRow>
     </Container>
   )
