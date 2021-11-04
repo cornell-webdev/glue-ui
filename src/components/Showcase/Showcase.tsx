@@ -31,10 +31,12 @@ export const Showcase = ({
     <Section>
       <FlexContainer justifySpaceAround alignCenter>
         <FadeOnView>
-          {overline && <Overline variant='h4'>{overline}</Overline>}
-          <Text variant='h1' color={theme.brand[500]}>
-            {name}
-          </Text>
+          <div>{overline && <Overline variant='h4'>{overline}</Overline>}</div>
+          <div>
+            <Text variant='h1' color={theme.brand[500]}>
+              {name}
+            </Text>
+          </div>
           <Spacer y={3} />
           {paragraphs?.map((paragraph) => (
             <div key={paragraph}>
