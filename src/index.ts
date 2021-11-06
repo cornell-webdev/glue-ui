@@ -10,6 +10,7 @@ import Showcase from './components/Showcase/Showcase'
 import useIsDesktop from './components/useIsDesktop/useIsDesktop'
 import useWindowSize from './components/useWindowSize/useWindowSize'
 import FlexContainer from './components/FlexContainer/FlexContainer'
+import Span from './components/Span/Span'
 import theme from './theme'
 
 export {
@@ -26,4 +27,5 @@ export {
   useWindowSize,
   FlexContainer,
   theme,
+  Span,
 }

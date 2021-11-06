@@ -2,11 +2,11 @@ module.exports = (componentName) => ({
   content: `import React from 'react'
 import styled from 'styled-components'
 
-interface ${componentName}Props {
+interface I${componentName}Props {
   
 }
 
-export const ${componentName} = ({  }: ${componentName}Props) => {
+export const ${componentName} = ({  }: I${componentName}Props) => {
   return (
     <Container>
       ${componentName}
