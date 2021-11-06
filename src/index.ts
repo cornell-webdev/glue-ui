@@ -12,6 +12,7 @@ import useWindowSize from './components/useWindowSize/useWindowSize'
 import FlexContainer from './components/FlexContainer/FlexContainer'
 import Span from './components/Span/Span'
 import theme from './theme'
+import Avatar from './components/Avatar/Avatar'
 
 export {
   Button,
@@ -28,4 +29,5 @@ export {
   FlexContainer,
   theme,
   Span,
+  Avatar
 }
