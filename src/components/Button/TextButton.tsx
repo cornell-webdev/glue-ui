@@ -32,6 +32,11 @@ const Container = styled.button<IContainerProps>`
     background-color: ${(props) => props.theme.brand[50]};
     background-color: ${(props) => props.background && props.background};
   }
+
+  /* disabled */
+  color: ${(props) => props.disabled && props.theme.grey[500]};
+  background: ${(props) => props.disabled && 'none'};
+  cursor: ${(props) => props.disabled && 'initial'};
 `
 
 export default TextButton

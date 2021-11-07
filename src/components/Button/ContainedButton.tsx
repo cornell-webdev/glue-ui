@@ -30,6 +30,10 @@ const Container = styled.button<IContainerProps>`
 
   /* color */
   color: ${(props) => props.color && props.color};
+
+  /* disabled */
+  background: ${(props) => props.disabled && props.theme.grey[400]};
+  cursor: ${(props) => props.disabled && 'initial'};
 `
 
 export default ContainedButton

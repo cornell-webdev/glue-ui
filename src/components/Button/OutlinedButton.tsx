@@ -33,6 +33,12 @@ const Container = styled.button<IContainerProps>`
     background-color: ${(props) => props.theme.brand[50]};
     background-color: ${(props) => props.background && props.background};
   }
+
+  /* disabled */
+  border-color: ${(props) => props.disabled && props.theme.grey[400]};
+  color: ${(props) => props.disabled && props.theme.grey[400]};
+  background-color: ${(props) => props.disabled && 'fff'};
+  cursor: ${(props) => props.disabled && 'initial'};
 `
 
 export default OutlinedButton
