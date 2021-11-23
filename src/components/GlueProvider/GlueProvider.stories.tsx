@@ -8,7 +8,7 @@ export default {
 } as ComponentMeta<typeof GlueProvider>
 
 const Template: ComponentStory<typeof GlueProvider> = (args) => (
-  <GlueProvider {...args}>Button</GlueProvider>
+  <GlueProvider {...args}>Glue provider</GlueProvider>
 )
 
 export const Default = Template.bind({})
