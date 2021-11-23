@@ -13,7 +13,6 @@ import FlexContainer from './components/FlexContainer/FlexContainer'
 import Span from './components/Span/Span'
 import theme from './theme'
 import Avatar from './components/Avatar/Avatar'
-import { showToast, IToastOptions } from './components/Toast/Toast'
 
 export {
   Button,
@@ -31,6 +30,4 @@ export {
   theme,
   Span,
   Avatar,
-  showToast,
-  IToastOptions,
 }

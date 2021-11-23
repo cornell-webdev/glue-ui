@@ -1,6 +1,6 @@
 {
   "name": "cornell-glue-ui",
-  "version": "0.1.28",
+  "version": "0.1.29",
   "main": "build/index.js",
   "module": "build/index.esm.js",
   "files": [
@@ -97,7 +97,6 @@
   "dependencies": {
     "react-device-detect": "^2.1.2",
     "react-perfect-scrollbar": "^1.5.8",
-    "react-toastify": "^7.0.4",
     "storybook-addon-react-docgen": "^1.2.42"
   }
 }

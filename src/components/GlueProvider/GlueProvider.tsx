@@ -6,7 +6,6 @@ import './normalize.css'
 import ScrollToTop from './ScrollToTop'
 import PerfectScrollbar from 'react-perfect-scrollbar'
 import 'react-perfect-scrollbar/dist/css/styles.css'
-import ToastProvider from './ToastProvider'
 
 interface GlueProviderProps {
   overrideTheme?: any
@@ -20,7 +19,6 @@ export const GlueProvider = ({ overrideTheme, children }: GlueProviderProps) => 
         <Container>
           <PerfectScrollbar>{children}</PerfectScrollbar>
           <ScrollToTop />
-          <ToastProvider />
         </Container>
       </ThemeProvider>
     </>
