@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 interface TextButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   background?: string
+  defaultBackground?: string
   color?: string
 }
 
@@ -12,24 +13,28 @@ export const TextButton = ({ children, ...rest }: TextButtonProps) => {
 
 interface IContainerProps {
   background: TextButtonProps['background']
+  defaultBackground: TextButtonProps['defaultBackground']
   color: TextButtonProps['color']
 }
 
 const Container = styled.button<IContainerProps>`
   border-radius: 8px;
   font-size: 1rem;
-  font-weight: medium;
-  padding: 0.5rem 0.8rem;
+  padding: 0.5rem 0.5rem;
   color: ${(props) => props.theme.brand[500]};
   border: none;
-  background: inherit;
   cursor: pointer;
+
+  /* defaultBackground */
+  background-color: ${(props) => props.theme.brand[50]};
+  background-color: ${(props) => props.defaultBackground && props.defaultBackground};
 
   /* color */
   color: ${(props) => props.color && props.color};
 
   &:hover {
-    background-color: ${(props) => props.theme.brand[50]};
+    /* background */
+    background-color: ${(props) => props.theme.brand[100]};
     background-color: ${(props) => props.background && props.background};
   }
 

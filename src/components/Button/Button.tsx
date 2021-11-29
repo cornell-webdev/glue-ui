@@ -5,6 +5,7 @@ import TextButton from './TextButton'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   background?: string
+  defaultBackground?: string
   color?: string
   variant?: 'contained' | 'text' | 'outlined'
   disabled?: boolean
