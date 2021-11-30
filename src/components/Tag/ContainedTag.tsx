@@ -9,7 +9,7 @@ interface ContainedTagProps extends React.HTMLAttributes<HTMLDivElement> {
 export const ContainedTag = ({ children, ...rest }: ContainedTagProps) => {
   return (
     <Container {...rest}>
-      {children}
+      <b>{children}</b>
     </Container>
   )
 }
@@ -20,10 +20,10 @@ interface IContainerProps {
 }
 
 const Container = styled.div<IContainerProps>`
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 20px;
+  font-size: 12px;
   font-weight: medium;
-  padding: 0.5rem 0.8rem;
+  padding: 4px 11px;
   width: fit-content;
   height: fit-content;
   text-align: center;

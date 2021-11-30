@@ -7,7 +7,7 @@ interface OutlinedTagProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export const OutlinedTag = ({ children, ...rest }: OutlinedTagProps) => {
-  return <Container {...rest}>{children}</Container>
+  return <Container {...rest}><b>{children}</b></Container>
 }
 
 interface IContainerProps {
@@ -16,10 +16,10 @@ interface IContainerProps {
 }
 
 const Container = styled.button<IContainerProps>`
-  border-radius: 6px;
-  font-size: 1rem;
+  border-radius: 20px;
+  font-size: 12px;
   font-weight: medium;
-  padding: 0.5rem 0.8rem;
+  padding: 4px 11px;
   color: ${(props) => props.theme.brand[500]};
   border: 2px solid ${(props) => props.theme.brand[500]};
   background: inherit;
