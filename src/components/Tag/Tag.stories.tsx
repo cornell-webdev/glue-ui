@@ -12,5 +12,14 @@ const Template: ComponentStory<typeof Tag> = (args) => (
 )
 
 export const Default = Template.bind({})
-Default.args = {
+Default.args = {}
+
+export const ContainedTag = Template.bind({})
+ContainedTag.args = {
+  variant: 'contained',
+}
+
+export const OutlinedTag = Template.bind({})
+OutlinedTag.args = {
+  variant: 'outlined',
 }
