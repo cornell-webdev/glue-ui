@@ -25,7 +25,7 @@ export const FlexContainer = styled.div<FlexContainerProps>`
   justify-content: ${(props) => props.justifySpaceBetween && 'space-between'};
 
   // justifySpaceAround
-  justify-content: ${(props) => props.justifySpaceBetween && 'space-around'};
+  justify-content: ${(props) => props.justifySpaceAround && 'space-around'};
 
   // justifyCenter
   justify-content: ${(props) => props.justifyCenter && 'center'};
