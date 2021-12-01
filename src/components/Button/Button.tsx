@@ -9,6 +9,8 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   color?: string
   variant?: 'contained' | 'text' | 'outlined'
   disabled?: boolean
+  startIcon?: React.ReactNode
+  endIcon?: React.ReactNode
 }
 
 export const Button = ({ children, variant = 'contained', ...rest }: ButtonProps) => {
