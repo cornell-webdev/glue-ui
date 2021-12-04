@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { theme as defaultTheme } from '../../theme'
-import './fonts.css'
+import './sf-pro.css'
 import './normalize.css'
 import ScrollToTop from './ScrollToTop'
 import PerfectScrollbar from 'react-perfect-scrollbar'

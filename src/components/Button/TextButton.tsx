@@ -11,15 +11,15 @@ interface TextButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> 
 
 export const TextButton = ({ children, startIcon, endIcon, ...rest }: TextButtonProps) => {
   return (
-    <Container startIcon={startIcon} endIcon={endIcon} {...rest}>
+    <StyledTextButton startIcon={startIcon} endIcon={endIcon} {...rest}>
       {startIcon}
       {children}
       {endIcon}
-    </Container>
+    </StyledTextButton>
   )
 }
 
-interface IContainerProps {
+interface StyledTextButtonProps {
   background: TextButtonProps['background']
   defaultBackground: TextButtonProps['defaultBackground']
   color: TextButtonProps['color']
@@ -27,15 +27,17 @@ interface IContainerProps {
   endIcon: TextButtonProps['endIcon']
 }
 
-const Container = styled.button<IContainerProps>`
+const StyledTextButton = styled.button<StyledTextButtonProps>`
   border-radius: 8px;
-  font-size: 1rem;
-  padding: 0.5rem;
+  font-size: 0.875rem;
+  padding: 0.4rem 0.25rem;
+  font-weight: 500;
   color: ${(props) => props.theme.brand[500]};
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
+  background-color: ${(props) => props.theme.brand[50]};
 
   /* startIcon */
   padding-left: ${(props) => props.startIcon && '.3rem;'};
@@ -44,8 +46,8 @@ const Container = styled.button<IContainerProps>`
   padding-right: ${(props) => props.endIcon && '.3rem;'};
 
   & svg {
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
 
     /* color */
     fill: ${(props) => props.color && props.color};
@@ -58,7 +60,6 @@ const Container = styled.button<IContainerProps>`
   }
 
   /* defaultBackground */
-  background-color: ${(props) => props.theme.brand[50]};
   background-color: ${(props) => props.defaultBackground && props.defaultBackground};
 
   /* color */
