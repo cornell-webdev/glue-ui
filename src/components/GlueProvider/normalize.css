@@ -53,6 +53,7 @@ table {
 a, a:hover, a:focus {
 	text-decoration: none;
 	color: inherit;
+	display: inline-block;
 }
 
 input, button { 
