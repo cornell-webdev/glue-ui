@@ -34,7 +34,7 @@ export const theme = {
 
   // text
   text: {
-    default: 'rgba(0, 0, 0, 0.87)',
+    default: '#424242',
     light: '#575859',
     muted: '#737576',
     placeholder: '#D3D7DB',
