@@ -39,7 +39,7 @@ export const Text = ({ variant = 'p', children, ...rest }: TextProps) => {
 const CoreText = styled.p<TextProps>`
   color: ${(props) => props.theme.text.default};
   white-space: pre-line;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
 
   // maxLines

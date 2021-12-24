@@ -42,8 +42,9 @@ export const theme = {
   },
 
   // shadow
-  shadow: '0 2px 4px rgba(0, 0, 0, .2)',
-
+  shadow: {
+    default: '0 2px 4px rgba(0, 0, 0, .1)',
+  },
   // social
   facebook: '#3B5998',
   twitter: '#00ACED',
