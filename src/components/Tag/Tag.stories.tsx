@@ -2,6 +2,7 @@ import React from 'react'
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 import { Tag } from './Tag'
 
+
 export default {
   title: 'Tag',
   component: Tag,

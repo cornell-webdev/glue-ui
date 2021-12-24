@@ -11,8 +11,8 @@ export const OutlinedTag = ({ children, ...rest }: OutlinedTagProps) => {
 }
 
 interface IContainerProps {
-  background: OutlinedTagProps['background']
-  color: OutlinedTagProps['color']
+  background?: OutlinedTagProps['background']
+  color?: OutlinedTagProps['color']
 }
 
 const Container = styled.button<IContainerProps>`

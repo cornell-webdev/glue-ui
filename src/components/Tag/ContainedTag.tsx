@@ -15,8 +15,8 @@ export const ContainedTag = ({ children, ...rest }: ContainedTagProps) => {
 }
 
 interface IContainerProps {
-  background: ContainedTagProps['background']
-  color: ContainedTagProps['color']
+  background?: ContainedTagProps['background']
+  color?: ContainedTagProps['color']
 }
 
 const Container = styled.div<IContainerProps>`
@@ -29,7 +29,7 @@ const Container = styled.div<IContainerProps>`
   text-align: center;
   color: ${(props) => props.theme.brand[500]};
   border: none;
-  background: ${(props) => props.theme.brand[100]};;
+  background: ${(props) => props.theme.brand[100]};
 
   /* background */
   background: ${(props) => props.background && props.background};
