@@ -11,6 +11,7 @@ interface TextProps
   maxLines?: number
   fontWeight?: number | string
   color?: string
+  textAlign?: 'start' | 'end' | 'center'
 }
 
 export const Text = ({ variant = 'p', children, ...rest }: TextProps) => {
@@ -42,7 +43,7 @@ const CoreText = styled.p<TextProps>`
   font-weight: 400;
   line-height: 1.5;
 
-  // maxLines
+  /* maxLines */
   overflow: ${(props) => props.maxLines && 'hidden'};
   text-overflow: ${(props) => props.maxLines && 'ellipsis'};
   display: ${(props) => props.maxLines && '-webkit-box'};
@@ -54,6 +55,9 @@ const CoreText = styled.p<TextProps>`
 
   /* color */
   color: ${(props) => props.color && props.color};
+
+  /* textAlign */
+  text-align: ${(props) => props.textAlign && props.textAlign};
 `
 
 export const H1 = styled(CoreText)`
