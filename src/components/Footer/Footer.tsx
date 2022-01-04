@@ -50,12 +50,12 @@ export const Footer = ({ logo, navs }: IFooterProps) => {
       <BottomRow>
         <LightText variant='meta1'>© 2021 webdev</LightText>
         <FlexContainer flexDirection='column' alignEnd>
-          <LightText variant='meta1'>
-            Built with 🖤 by{' '}
-            <StyledA href='https://cornellwebdev.com' target='_blank'>
+          <BuiltWithText variant='meta1'>
+            Built with<span>❤️</span> by
+            <WebdevLink href='https://cornellwebdev.com' target='_blank'>
               webdev
-            </StyledA>
-          </LightText>
+            </WebdevLink>
+          </BuiltWithText>
           <Spacer y={1} />
           <LightText variant='meta1'>cornellwebdev@gmail.com</LightText>
         </FlexContainer>
@@ -112,6 +112,14 @@ const LightText = styled(Text)`
   text-align: right;
 `
 
+const BuiltWithText = styled(LightText)`
+  & span,
+  & a {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+`
+
 const LinkContainer = styled.div`
   margin-bottom: 0.75rem;
 `
@@ -125,9 +133,14 @@ const Heading = styled(Text)`
   color: ${(props) => props.theme.text.light};
 `
 
-const StyledA = styled.a`
+const WebdevLink = styled.a`
   color: ${(props) => props.theme.brand[500]};
   text-decoration: underline;
+
+  &:hover {
+    color: ${(props) => props.theme.brand[500]};
+    text-decoration: underline;
+  }
 `
 
 export default Footer
