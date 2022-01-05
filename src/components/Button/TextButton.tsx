@@ -41,9 +41,11 @@ const StyledTextButton = styled.button<StyledTextButtonProps>`
 
   /* startIcon */
   padding-left: ${(props) => props.startIcon && '.3rem;'};
+  padding-right: ${(props) => props.startIcon && '.45rem;'};
 
   /* endIcon */
   padding-right: ${(props) => props.endIcon && '.3rem;'};
+  padding-left: ${(props) => props.endIcon && '.45rem;'};
 
   & svg {
     height: 18px;
