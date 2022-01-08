@@ -39,6 +39,7 @@ export const theme = {
     muted: '#737576',
     placeholder: '#D3D7DB',
     disabled: 'rgba(0, 0, 0, 0.38)',
+    error: '#D05F5F',
   },
 
   // shadow
