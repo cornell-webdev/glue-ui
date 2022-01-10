@@ -8,8 +8,8 @@ interface ISpacerProps {
 export const Spacer = styled.div<ISpacerProps>`
   flex-grow: 0;
   flex-shrink: 0;
-  width: ${(props) => props.x && (typeof props.x === 'string' ? props.x : `${props.x / 2}rem`)};
-  height: ${(props) => props.y && (typeof props.y === 'string' ? props.y : `${props.y / 2}rem`)};
+  width: ${(props) => props.x && (typeof props.x === 'string' ? props.x : `${props.x}rem`)};
+  height: ${(props) => props.y && (typeof props.y === 'string' ? props.y : `${props.y}rem`)};
 `
 
 export default Spacer
