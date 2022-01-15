@@ -30,9 +30,10 @@ const StyledIconButton = styled.button<IStyledIconButtonProps>`
   height: 2.5rem;
   width: 2.5rem;
   cursor: pointer;
+  background: ${(props) => props.theme.grey[50]};
 
   &:hover {
-    background: ${(props) => props.theme.grey[50]};
+    background: ${(props) => props.theme.grey[100]};
   }
 
   & svg {
