@@ -80,7 +80,7 @@ export const H4 = styled(CoreText)`
 `
 
 export const H5 = styled(CoreText)`
-  font-size: 1.2rem;
+  font-size: 1.375rem;
 `
 
 export const H6 = styled(CoreText)`
