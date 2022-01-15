@@ -67,6 +67,7 @@ export const CoreButton = styled.button<IButtonCoreProps>`
   /* size === 'small' */
   font-size: ${(props) => props.size === 'small' && '0.875rem'};
   padding: ${(props) => props.size === 'small' && '0.2rem 0.6rem'};
+  padding: ${(props) => props.size === 'small' && props.variant === 'text' && '0.2rem 0.3rem'};
 
   /* color */
   color: ${(props) => props.color && props.color};
@@ -77,10 +78,14 @@ export const CoreButton = styled.button<IButtonCoreProps>`
   /* startIcon */
   padding-left: ${(props) => props.startIcon && '.6rem;'};
   padding-left: ${(props) => props.startIcon && props.size === 'small' && '.4rem;'};
+  padding-left: ${(props) =>
+    props.startIcon && props.size === 'small' && props.variant === 'text' && '.25rem;'};
 
   /* endIcon */
   padding-right: ${(props) => props.endIcon && '.6rem;'};
   padding-right: ${(props) => props.endIcon && props.size === 'small' && '.4rem;'};
+  padding-right: ${(props) =>
+    props.endIcon && props.size === 'small' && props.variant === 'text' && '.25rem;'};
 
   & svg {
     height: 20px;
