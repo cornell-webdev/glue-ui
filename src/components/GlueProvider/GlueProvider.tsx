@@ -29,7 +29,7 @@ const Container = styled.div`
   width: 100vw;
   max-width: 100vw;
   height: 100vh;
-  background: ${(props) => props.theme.bg.default};
+  background: ${(props) => props.theme.background.default};
 
   @media (min-width: ${(props) => props.theme.tablet}) {
     width: initial;

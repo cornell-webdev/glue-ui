@@ -19,7 +19,7 @@ export const theme = {
   },
 
   // bg
-  bg: {
+  background: {
     default: palette.grey[0],
     wash: palette.grey[50],
     grey: palette.grey[200],
