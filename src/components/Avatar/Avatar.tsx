@@ -1,34 +1,76 @@
 import React from 'react'
 import styled from 'styled-components'
-import './Avatar.css'
+import { Text, theme } from '../..'
 
-interface AvatarProps extends React.HTMLAttributes<HTMLDivElement> {
+interface IAvatarProps extends React.HTMLAttributes<HTMLDivElement> {
   name: string
+  underline?: string
   avatarColor?: string
 }
 
-export const Avatar = ({ name, ...rest }: AvatarProps) => {
+export const Avatar = ({ name, underline, ...rest }: IAvatarProps) => {
+  if (name?.length === 0) return null
+
   return (
-    <NameContainer {...rest}>
-      <CircleContainer className='circle' {...rest} >{name[0]}</CircleContainer>
-      {name}
+    <NameContainer {...rest} underline={underline}>
+      <CircleContainer {...rest}>{name[0]}</CircleContainer>
+      <TextContainer>
+        <StyledText underline={underline} variant='meta1' maxLines={1}>
+          {name}
+        </StyledText>
+        {underline && (
+          <StyledText underline={underline} variant='meta1' color={theme.text.muted}>
+            {underline}
+          </StyledText>
+        )}
+      </TextContainer>
     </NameContainer>
   )
 }
 
-interface IContainerProps {
-  name: AvatarProps['name']
-  avatarColor: AvatarProps['color']
+const NameContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  max-width: 300px;
+
+  /* underline */
+  align-items: ${(props) => props.underline && `center`};
+`
+
+interface ITextContainerProps {
+  name: IAvatarProps['name']
 }
 
-const NameContainer = styled.div`
-line-height: 25px;
-font-size: 0.88rem;
-border: none;
-padding: 1.2rem 0.5rem;
+const TextContainer = styled.div<ITextContainerProps>`
+  padding-top: 0.15rem;
+
+  /* underline */
+  padding-top: ${(props) => props.underline && `0`};
 `
-const CircleContainer = styled.div<IContainerProps>`
-background:${(props) => props.avatarColor}
+
+const StyledText = styled(Text)`
+  /* underline */
+  line-height: ${(props) => props.underline && `1.1`};
+`
+
+interface ICircleContainerProps {
+  name: IAvatarProps['name']
+  avatarColor: IAvatarProps['color']
+}
+
+const CircleContainer = styled.div<ICircleContainerProps>`
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  color: #424242;
+  border-radius: 50%;
+  background: #ffe092;
+  background: ${(props) => props.avatarCozlor};
+  margin-right: 8px;
+  text-align: center;
+  font-size: 0.88rem;
+  font-weight: medium;
+  flex-shrink: 0;
 `
 
 export default Avatar
