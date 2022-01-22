@@ -4,8 +4,8 @@ import { theme as defaultTheme } from '../../theme'
 import './sf-pro.css'
 import './normalize.css'
 import ScrollToTop from './ScrollToTop'
-import PerfectScrollbar from 'react-perfect-scrollbar'
-import 'react-perfect-scrollbar/dist/css/styles.css'
+// import PerfectScrollbar from 'react-perfect-scrollbar'
+// import 'react-perfect-scrollbar/dist/css/styles.css'
 
 interface GlueProviderProps {
   overrideTheme?: any
@@ -17,7 +17,7 @@ export const GlueProvider = ({ overrideTheme, children }: GlueProviderProps) => 
     <>
       <ThemeProvider theme={{ ...defaultTheme, ...overrideTheme }}>
         <Container>
-          <PerfectScrollbar>{children}</PerfectScrollbar>
+          {children}
           <ScrollToTop />
         </Container>
       </ThemeProvider>
