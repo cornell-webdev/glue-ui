@@ -14,6 +14,7 @@ export interface IShowcaseProps {
   svg: React.ReactNode
   paragraphs?: string[]
   link?: string
+  isOpenNewTab?: boolean
   buttonText?: string
 }
 
@@ -22,6 +23,7 @@ export const Showcase = ({
   name,
   paragraphs,
   link,
+  isOpenNewTab = true,
   svg,
   buttonText = 'View project',
 }: IShowcaseProps) => {
@@ -32,27 +34,27 @@ export const Showcase = ({
       <FlexContainer justifySpaceAround alignCenter>
         <FadeOnView>
           <div>{overline && <Overline variant='h4'>{overline}</Overline>}</div>
-          <div>
-            <Text variant='h1' color={theme.brand[500]}>
+          <NameContainer>
+            <Name variant='h1' color={theme.brand[500]}>
               {name}
-            </Text>
-          </div>
-          <Spacer y={3} />
+            </Name>
+          </NameContainer>
+          <Spacer y={1.5} />
           {paragraphs?.map((paragraph) => (
             <div key={paragraph}>
               <LeftContainer>
-                <Text fontWeight={500}>{paragraph}</Text>
+                <Text variant='h6'>{paragraph}</Text>
               </LeftContainer>
-              <Spacer y={1.5} />
+              <Spacer y={1} />
             </div>
           ))}
-          <Spacer y={2.5} />
+          <Spacer y={1.5} />
           {link && (
-            <a href={link} target='_blank' rel='noopener noreferrer'>
+            <a href={link} target={isOpenNewTab ? '_blank' : undefined} rel='noopener noreferrer'>
               <Button variant='outlined'>{buttonText}</Button>
             </a>
           )}
-          <Spacer y={4} />
+          <Spacer y={2} />
           {!isDesktop && <FlexContainer justifyCenter>{svg}</FlexContainer>}
         </FadeOnView>
         <InnerDivider />
@@ -80,10 +82,18 @@ const Section = styled.div`
 
   @media (min-width: ${(props) => props.theme.large}) {
     & svg {
-      height: 40vh;
-      width: 40vh;
+      height: 30vw;
+      width: 30vw;
     }
   }
+`
+
+const NameContainer = styled.div`
+  max-width: 400px;
+`
+
+const Name = styled(Text)`
+  line-height: 1.2;
 `
 
 const InnerDivider = styled.div`
