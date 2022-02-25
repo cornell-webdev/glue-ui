@@ -6,6 +6,7 @@ export const theme = {
   disabled: palette.grey[400],
 
   brand: {
+    25: '#FEFBFB',
     50: '#FCF6F6',
     100: '#f9ecec',
     200: '#e8afaf',
