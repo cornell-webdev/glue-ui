@@ -112,8 +112,8 @@ export const CoreButton = styled.button<IButtonCoreProps>`
 
   /* disabled */
   color: ${(props) => props.disabled && props.theme.text.muted};
-  background: ${(props) => props.disabled && props.theme.grey[400]};
-  border-color: ${(props) => props.disabled && props.theme.grey[400]};
+  background: ${(props) => props.disabled && props.theme.grey[200]};
+  border-color: ${(props) => props.disabled && props.theme.grey[200]};
   cursor: ${(props) => props.disabled && 'initial'};
   background: ${(props) =>
     props.disabled && props.variant === 'outlined' && props.theme.background.default};
@@ -128,7 +128,7 @@ export const CoreButton = styled.button<IButtonCoreProps>`
         !props.disabled && props.variant === 'text' && props.hoverBackground};
 
       /* disabled */
-      background-color: ${(props) => props.disabled && props.theme.grey[400]};
+      background-color: ${(props) => props.disabled && props.theme.grey[200]};
       background: ${(props) =>
         props.disabled && props.variant === 'outlined' && props.theme.background.default};
     }
