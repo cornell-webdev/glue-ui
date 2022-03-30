@@ -48,7 +48,7 @@ export const Footer = ({ logo, navs }: IFooterProps) => {
       </TopRow>
       <Spacer y={2} />
       <BottomRow>
-        <LightText variant='meta1'>© 2021 webdev</LightText>
+        <LightText variant='meta1'>© 2022 webdev</LightText>
         <FlexContainer flexDirection='column' alignEnd>
           <BuiltWithText variant='meta1'>
             Built with<span>❤️</span> by
